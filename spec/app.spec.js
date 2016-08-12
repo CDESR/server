@@ -15,15 +15,15 @@ describe("Express Server API", function () {
         .expect(200, done);
     });
 
-    it("returns a correct json format", function (done) {
-      supertest(app)
-        .get('/users')
-        .expect({
-          name: 'Junius',
-          job: 'asking questions',
-          age: 25
-        }, done);
-    });
+    // it("returns a correct json format", function (done) {
+    //   supertest(app)
+    //     .get('/users')
+    //     .expect({
+    //       name: 'Junius',
+    //       job: 'asking questions',
+    //       age: 25
+    //     }, done);
+    // });
 
   });
 });
