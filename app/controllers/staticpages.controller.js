@@ -1,3 +1,5 @@
+// can make this into an object and export that object
+
 module.exports.renderAbout = function(req, res) {
   res.render("static_pages/about", {title: 'About us'});
 };

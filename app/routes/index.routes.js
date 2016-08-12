@@ -7,9 +7,16 @@ module.exports = function(app) {
   //
   // var contact = require('../controllers/contact.server.controller');
 
-var staticpages = require('../controllers/staticpages.controller');
+  var staticpages = require('../controllers/staticpages.controller');
 
+  var usersController = require('../controllers/users.controllers')
+
+  // ACTUAL ROUTING
+  // static page routes
   app.get('/', staticpages.renderHome);
   app.get('/about', staticpages.renderAbout);
   app.get('/contact', staticpages.renderContact);
+
+  // static page routes
+  app.get('/users', usersController.index);
 }
