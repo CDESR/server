@@ -1,9 +1,35 @@
 module.exports = {
   index: function(req, res){
-    res.json(
-      {name: 'Junius',
-       job: 'asking questions',
-       age: 25});
-  }
+    var cdesr = [
+                  {
+                    name: 'Ren Cheng',
+                    hobby: 'Ping Pong!',
+                    img: ''
+                  },
+                  {
+                    name: 'Dylan',
+                    hobby: 'Pokemon GO!',
+                    img: ''
+                  },
+                  {
+                    name: 'Chris Ong',
+                    hobby: 'Basketball!',
+                    img: ''
+                  },
+                  {
+                    name: 'Sebastian',
+                    hobby: 'Archery!',
+                    img: ''
+                  },
+                  {
+                    name: 'Edison',
+                    hobby: 'KDrama!',
+                    img: ''
+                  }
 
-}
+                ];
+
+    res.json(cdesr);
+
+  }
+};
