@@ -35,33 +35,3 @@ describe("Express Server API", function () {
 
   });
 });
-
-// describe("Express Server", function(){
-//   describe("Get /", function(){
-//     it("returns status code 200", function(done){
-//       request.get(base_url, function(err, res, body){
-//           expect ( res.statusCode).toBe(200);
-//           done();
-//       });
-//     });
-//   });
-//
-//   describe("Get /about", function(){
-//     it("returns status code 200", function(done){
-//       request.get(about_url, function(err, res, body){
-//           expect ( res.statusCode).toBe(200);
-//           done();
-//       });
-//     });
-//   });
-//
-//   describe("Get /contact", function(){
-//     it("returns status code 200", function(done){
-//       request.get(contact_url, function(err, res, body){
-//           expect ( res.statusCode).toBe(200);
-//           done();
-//       });
-//     });
-//   });
-
-// });
