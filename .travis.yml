@@ -1,0 +1,11 @@
+language: node_js
+node_js:
+- node
+deploy:
+  provider: heroku
+  api_key:
+    secure: v0TeOuK6NnnbycgtJBRXm6xbrDMgzbTMCb/uF+1sAq+9Gb8U8lB6AEPA/xUB2+5HhgyE/1ZQJc8i8d9R09pa5Q2UBQ0dUOalWxhWUOeeVgKA/s+B1ff/pLug7LtREJRBK3FEdF+hHBTGCLvVwvtxjweOiYBqO1dymcD1uNzXtej1iL368AGMMNqvF+Fdotc9QZAac/g71Ug+V1Elo/l2MSFaB77FvWgQDUHNbhr7apj8FrWFGKdMgIkgSpUiAvM/jujgjSZFIN8jdrMoIZC2Hum+pTjEM4e5swIox/BRSyfRWETGBZapEoZqhQ/XQkZ0a6fRyS97cG91bJGAFP7peTE2BrwKa0wzgZjwtsFYVOF0dfP7FM+szQ2Z2ZFNqtP94oqYhYJEX704I9/3QoUvYAmUYoe/N/EMJ1jRUJAKOkeZ/COu2fczZ2xoC6jj2cohYGhSmyQ6/h/FkhePDMvxikrl0UeZ8O9DNNQibdFORux1vKujTyhxXEWST/14ZF5I9yRXJhmfl4Hz7xWTdZBZQYQLiHbkOk0d9oDVHi8kkeVc8p+Cb/24EQvvD2x8tO+W+5cteVzWcPLA9vAaRvaFPpOapjT5QpeSCvbTHvfGulwZSEZNviTQKxyFEBUp74HapFowvmufokfwW9wRO9HenwyODSaWEBTCdN2xsEZ07Bo=
+  app: arcane-tor-57926
+  on:
+    repo: CDESR/server
+    branch: develop

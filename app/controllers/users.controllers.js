@@ -1,35 +1,35 @@
 module.exports = {
-  index: function(req, res) {
-    res.json({
-        name: 'Chris Ong',
-        hobby: 'Basketball',
-        img: ''
-      },
+  index: function(req, res){
+    var cdesr = [
+                  {
+                    name: 'Ren Cheng',
+                    hobby: 'Ping Pong!',
+                    img: ''
+                  },
+                  {
+                    name: 'Dylan',
+                    hobby: 'Pokemon GO!',
+                    img: ''
+                  },
+                  {
+                    name: 'Chris Ong',
+                    hobby: 'Basketball!',
+                    img: ''
+                  },
+                  {
+                    name: 'Sebastian',
+                    hobby: 'Archery!',
+                    img: ''
+                  },
+                  {
+                    name: 'Edison',
+                    hobby: 'KDrama!',
+                    img: ''
+                  }
 
-      {
-        name: 'Dylan',
-        hobby: 'Pokemon',
-        img: ''
-      },
+                ];
 
-      {
-        name: 'Edison',
-        hobby: 'Korean Drama',
-        img: ''
-      },
+    res.json(cdesr);
 
-      {
-        name: 'Sebastian',
-        hobby: 'Archery',
-        img: ''
-      },
-
-      {
-        name: 'Rench',
-        hobby: 'Read',
-        img: ''
-      }
-    );
   }
-
-}
+};
