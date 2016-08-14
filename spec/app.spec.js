@@ -18,13 +18,21 @@ describe("Express Server API", function () {
     it("returns a correct json format", function (done) {
       supertest(app)
         .get('/users')
-        .expect({
-          name: 'Junius',
-          job: 'asking questions',
-          age: 25
-        }, done);
+        .expect({name: 'Chris Ong',
+         hobby: 'Basketball',
+         img: ''}, done);
     });
 
+    it('returns status 404 when name is not found', function(done) {
+     console.log("in 404 test");
+     supertest(app)
+       .get('/users/junius')
+       .set('Accept', 'application/json')
+       .expect('Content-Type', /json/)
+       .expect(404);
+       done();
+   });
+   
   });
 });
 
