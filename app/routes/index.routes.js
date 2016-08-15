@@ -9,7 +9,7 @@ module.exports = function(app) {
 
   var staticpages = require('../controllers/staticpages.controller');
 
-  var usersController = require('../controllers/users.controllers')
+  var usersController = require('../controllers/users.controller')
 
   // ACTUAL ROUTING
   // static page routes

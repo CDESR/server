@@ -27,6 +27,7 @@ module.exports = function() {
   app.use(expressLayouts);
 
   require('../app/routes/index.routes.js')(app);
+  require('../app/routes/members.server.routes.js')(app)
 
   app.use(express.static('./public'));
   return app;
